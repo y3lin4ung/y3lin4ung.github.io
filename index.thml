@@ -1,9 +1,63 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title> Chris - Cyber Security Operation Center CSOC </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encoding and Decoding</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-<h1>Chris CSOC</h1>
-<p>I'm hosted with Githug Pages. </p>
+    <header>
+        <h1>Encoding and Decoding</h1>
+    </header>
+
+    <nav>
+        <ul class="tabs">
+            <li class="active"><a href="#Base64">Base64</a></li>
+            <li><a href="#HEX">HEX</a></li>
+            <li><a href="#HexDump">HexDump</a></li>
+            <li><a href="#URL">URL</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div id="Base64" class="tab-content active">
+            <h2>Base64 Encoding and Decoding</h2>
+            <textarea id="base64Input" placeholder="Enter text"></textarea>
+            <button onclick="encodeBase64()">Encode</button>
+            <button onclick="decodeBase64()">Decode</button>
+            <h3>Result:</h3>
+            <div id="base64Result"></div>
+        </div>
+
+        <div id="HEX" class="tab-content">
+            <h2>HEX Encoding and Decoding</h2>
+            <textarea id="hexInput" placeholder="Enter text"></textarea>
+            <button onclick="encodeHEX()">Encode</button>
+            <button onclick="decodeHEX()">Decode</button>
+            <h3>Result:</h3>
+            <div id="hexResult"></div>
+        </div>
+
+        <div id="HexDump" class="tab-content">
+            <h2>HexDump Encoding and Decoding</h2>
+            <textarea id="hexDumpInput" placeholder="Enter text"></textarea>
+            <button onclick="encodeHexDump()">Encode</button>
+            <button onclick="decodeHexDump()">Decode</button>
+            <h3>Result:</h3>
+            <div id="hexDumpResult"></div>
+        </div>
+
+        <div id="URL" class="tab-content">
+            <h2>URL Encoding and Decoding</h2>
+            <textarea id="urlInput" placeholder="Enter text"></textarea>
+            <button onclick="encodeURL()">Encode</button>
+            <button onclick="decodeURL()">Decode</button>
+            <h3>Result:</h3>
+            <div id="urlResult"></div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>

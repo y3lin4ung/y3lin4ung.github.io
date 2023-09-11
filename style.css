@@ -1,0 +1,35 @@
+/* Add your CSS styles here */
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+nav ul.tabs {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul.tabs li {
+    display: inline;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+nav ul.tabs li.active {
+    font-weight: bold;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
